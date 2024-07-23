@@ -1,50 +1,118 @@
-<img src="./node.png" bgcolor="teal">
+# What Is React ?
 
-# 🥇 Node Js Master Guide  
+**A JavaScript library for building user interfaces &#127942; it is declarative** 
 
-**Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that allows developers to build scalable, high-performance applications. It was created in 2009 by Ryan Dahl and has since become a popular platform for building server-side applications and network applications.**
+- **Components:** React is built around the concept of components, which are self-contained UI elements that can be reused throughout your application.
 
-**Node.js is built on the V8 JavaScript engine, the same engine used by the Google Chrome browser. It uses an event-driven, non-blocking I/O model, which makes it efficient and lightweight. This allows developers to build applications that can handle a large number of concurrent connections with minimal overhead.**
+- **Virtual DOM:** React uses a virtual representation of the DOM, which is more efficient than directly manipulating the actual DOM.
 
-<hr>
+- **State management:** React provides a way to manage state with in components, which makes it easier to build complex UIs.
 
-<a href="https://nodejs.org/dist/v18.16.0/node-v18.16.0-x64.msi">📦 Download Node</a>
-
-<hr>
-
-## Node Basic Setup and test
-
-- **Install Node.js: Go to the official Node.js website at https://nodejs.org and download the appropriate version for your operating system. Follow the installation instructions to install Node.js.**
-
-> JavaScript And ES5 and ES6
-
-> TypeScript
-
-> Runtime Enviroment
-
-> NPM And Yarn
-
-> File Handling
-
-> Database
-
-> API
+- **JSX:** React uses a syntax extension called JSX, which allows you to write HTML-like code within your JavaScript files.
 
 <hr>
+
+## Setup React App On Local Machine 
+
+### Install Node First https://nodejs.org/en/
+
+### npm update
+
+> npm install -g npm@latest
+
+
+### 1.method using npm
+```
+npm init react-app tech-app
+cd tech-app
+npm start
+```
+### 2.method using npx
 
 ```
-const http = require('http');
- 
-const hostname = '127.0.0.1';
-const port = 3000;
- 
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World');
-});
- 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
+npx create-react-app tech-app
+cd tech-app
+npm start
 ```
+
+### 3.method using npm  vite
+
+```
+npm create vite@latest
+cd tech-app 
+npm install
+npm run dev
+```
+<hr>
+
+- **JSX (JavaScript XML)** is a syntax extension used in React to describe the structure of user interface components in a more concise and intuitive way. It allows you to write HTML-like code directly in your JavaScript files, which is then transformed into JavaScript objects by the transpiler (such as Babel) before it's run by the browser.
+
+**In other words, JSX is a way to write React components using a syntax that closely resembles HTML. For example, instead of writing:**
+
+
+
+```
+const element = React.createElement(
+  'h1',
+  { className: 'greeting' },
+  'Hello, world!'
+);
+```
+**You can write the same thing using JSX like this:**
+
+```
+const element = <h1 className="greeting">Hello, world!</h1>;
+```
+
+- In this example, the JSX code is transformed into the same React.createElement call that we wrote before.
+
+- JSX allows you to easily compose complex UI components using a familiar syntax. It also allows you to use JavaScript expressions within the markup, which enables dynamic and data-driven rendering of UI components.
+
+- While JSX is not required to use React, it has become a widely adopted convention within the React community because of its many benefits
+
+
+
+
+
+
+## module 1
+
+1. Hello World
+2. Introducing JSX
+3. Rendering Elements
+4. Components and Props
+5. State and Lifecycle
+6. Handling Events
+7. Conditional Rendering
+8. Lists and Keys
+9. Forms
+10. Lifting State Up
+11. Composition vs Inheritance
+12. Thinking In React
+
+<a href="root.js">React Index File</a>
+
+### Import export
+```
+"use strict";
+ReactDOM.render( /*#__PURE__*/React.createElement("h1", null, "Welcome to react App"), document.getElementById('root'));
+```
+
+# Short Code
+
+> rfc
+
+> rafc
+
+
+
+> https://medium.com/@alimubashar74/react-native-what-is-the-difference-between-functional-and-class-components-25b4920c1686
+
+
+
+
+
+# Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
